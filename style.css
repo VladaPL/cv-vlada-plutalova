@@ -1,0 +1,166 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    padding-bottom: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.name-photo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.name-photo__img {
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.name-photo__title {
+    width: 250px;
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.education__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.example__cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.example td {
+    padding-bottom: 15px;
+}
+
+.contact__item {
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.contact__item--git:before {
+    position: absolute;
+    content: "";
+
+    left: -30px;
+
+    width: 20px;
+    height: 20px;
+    background-image: url(git.svg);
+}
+
+.contact__item--telegram:before {
+    position: absolute;
+    content: "";
+
+    left: -30px;
+
+    width: 20px;
+    height: 20px;
+    background-image: url(telegram.svg);
+}
+
+.contact__link {
+    text-decoration: none;
+}
+
+.contact__link:hover {
+    color: red;
+}
+
+/*about*/
+
+.about {
+    font-size: 20px;
+}
+
+/*     education           */
+
+.education {
+    font-size: 20px;
+}
+
+.education  a {
+    vertical-align: top;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.education  a:hover {
+    text-decoration: underline;
+}
+
+/*     stack      */
+
+.stack h2 {
+  margin: 10px 0;
+}
+
+.stack ul {
+    padding: 0 0 0 25px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+/*     example    */
+
+.examples__title {
+    margin-bottom: 0;
+}
+
+.example table {
+    font-size: 20px;
+    width: 100%;
+}
+
+.example thead tr {
+    line-height: 45px;
+    vertical-align: center;
+}
+
+.example table td {
+    vertical-align: top;
+}
+
+.example table td a {
+    vertical-align: top;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.example table a:hover {
+    text-decoration: underline;
+}
+
